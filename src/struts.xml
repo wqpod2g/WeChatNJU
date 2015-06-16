@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+    "http://struts.apache.org/dtds/struts-2.3.dtd">
+    
+<struts>
+
+		<!-- 配置开发者模式，修改东西，不用重启server就能看到  -->
+		<constant name = "struts.devMode" value = "true"/>
+		
+		
+		<!-- 微信确认token的action  -->			
+		<package name="default" namespace="/"  extends="struts-default"><!--注意每个包必须继承struts-default，否则很多拦截器的功能都无法实现-->
+			<action name="Confirm"  class="ConfirmAction">  	            	                			
+       		</action>        		
+		</package>
+		
+</struts>
