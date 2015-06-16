@@ -21,7 +21,7 @@ public class ConfirmWeChat extends ActionSupport{
 	@Override
     public String execute() throws Exception {
         
-		// 获取请求和响应
+        //获取请求和响应
         HttpServletRequest request = ServletActionContext.getRequest();
         HttpServletResponse response = ServletActionContext.getResponse();
        
